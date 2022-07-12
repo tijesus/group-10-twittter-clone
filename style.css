@@ -70,6 +70,13 @@ header{
 .button:hover{
     background-color: rgba(29, 155, 240, 0.9);
 }
+#feathertweet {
+    display: none;
+    background-color: #1d9bf0;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
 .user-acct{
     width: 100%;
     height: 30%;
@@ -130,6 +137,8 @@ main{
     position: sticky;
     top: 0;
     background-color: black;
+    backdrop-filter: blur(22px);
+    background-color: rgba(0, 0, 0, 0.65);
 }
 .new-tweet{
     display: flex;
@@ -389,39 +398,74 @@ main{
 .mobFooter {
     display: none;
 }
+/****** desktop view of 1287px ******/
+@media (max-width: 1287px) {
 
-@media (max-width: 600px) {
-    .side_bar, .user-acct, .side-feed {
+    .hidden_on_mobile{
+    display: none;
+}
+
+    #feathertweet {
+        display: block;
+    }
+    /* .side-feed{
         display: none;
-    }
+    } */
 
-    main{
-       min-width: 100%;
-       height: 100%;
-       margin: auto 0;
-       
-    }
+}
 
-    .main-flex{
-       width: 120%;
-        max-height: 70%;
-    }
+/********** tab view for 980px **********/
+@media (max-width: 980px){
 
-   
-    .main-feed{
-        width: 100%;  
+    .side-feed {
+            display: none;
     }
+}
 
-   
+
+
+/****** mobile view of 499px ******/
+@media (max-width: 600px) {
+
+            .side_bar,
+                .user-acct,
+                .side-feed {
+                    display: none;
+                }
+            
+                main {
+                    /* min-width: 100%; */
+                    height: 100%;
+                    margin: auto 0;
+                }
+            
+                .main-flex {
+                    width: 120%;
+                    /* max-height: 70%; */
+                }
+            
+                .main-feed {
+                    width: 100%;
+                }
+    footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #1d9bf0;
+        width: 100%;
+        z-index: 1;
+    }
     .mobFooter{
-         width: 120%;
-         max-height: 30%;
-         display: flex;
-         justify-content: space-around;
-         border-top: 1px solid rgb(47, 51, 54);
-         padding-top: 10px;
-         padding-bottom: 10px;
-           
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid rgb(47, 51, 54);
+        padding: 7px;
+    }
+    .mobFooter img{
+    filter: brightness(0) invert();
+    
     }
 
     
