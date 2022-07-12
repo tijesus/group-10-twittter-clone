@@ -385,3 +385,44 @@ main{
 .private{
     margin-right: 6px;
 }
+
+.mobFooter {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .side_bar, .user-acct, .side-feed {
+        display: none;
+    }
+
+    main{
+       min-width: 100%;
+       height: 100%;
+       margin: auto 0;
+       
+    }
+
+    .main-flex{
+       width: 120%;
+        max-height: 70%;
+    }
+
+   
+    .main-feed{
+        width: 100%;  
+    }
+
+   
+    .mobFooter{
+         width: 120%;
+         max-height: 30%;
+         display: flex;
+         justify-content: space-around;
+         border-top: 1px solid rgb(47, 51, 54);
+         padding-top: 10px;
+         padding-bottom: 10px;
+           
+    }
+
+    
+}
