@@ -69,6 +69,7 @@ header{
 }
 .button:hover{
     background-color: rgba(29, 155, 240, 0.9);
+    
 }
 #feathertweet {
     display: none;
@@ -76,11 +77,12 @@ header{
     height: 70px;
     width: 70px;
     border-radius: 100%;
+    margin-top: 20px;
 }
 .user-acct{
     width: 100%;
     height: 30%;
-    padding-top: 165px;
+    margin-top: 100px;
 }
 .user-acct a{
     display: flex;
@@ -456,7 +458,12 @@ main{
     }
 }
 
-
+/* message disappears */
+@media (max-width: 700px) {
+    .down-position{
+        display: none;
+    }
+}
 
 /****** mobile view of 499px ******/
 @media (max-width: 600px) {
@@ -481,6 +488,15 @@ main{
                 .main-feed {
                     width: 100%;
                 }
+                .home-bar{
+                    display: none;
+                }
+                .new-tweet{
+                    display: none;
+                }
+                .tweet-number{
+                    display: none;
+                }
     footer{
         position: fixed;
         bottom: 0;
@@ -499,7 +515,9 @@ main{
     }
     .mobFooter img{
     filter: brightness(0) invert();
-    
+    }
+    .down{
+        display: none;
     }
 
     
