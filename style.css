@@ -508,11 +508,9 @@ main{
 }
 
 /* message disappears */
-@media (max-width: 700px) {
-    .down-position{
-        /* display: none; */
-    }
-}
+/* @media (max-width: 700px) {
+
+} */
 
 
 /****** mobile view of 499px ******/
@@ -543,17 +541,11 @@ main{
                 .main-feed {
                     width: 100%;
                 }
-                .home-bar{
-                    /* display: none; */
-                }
                 .new-tweet{
                     display: none;
                 }
-                .tweet-number{
-                    /* display: none; */
-                }
                 .home-bar{
-    padding: 0 29px;
+                    padding: 0 29px;
                 }
 
     footer{
