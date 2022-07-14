@@ -127,6 +127,7 @@ main{
     width: 71%;
     height: 100%;
     margin-left: 29%;
+    padding-bottom: 50px;
 }
 .main-flex{
     display: flex;
@@ -266,9 +267,8 @@ main{
     margin-top: 20px;
 }
 .tweet-size-small{
-    width: 30%;
+    width: 48%;
     margin-top: 20px;
-    display: flex;
 }
 
 /*-------------------Third_side-----------------------*/
