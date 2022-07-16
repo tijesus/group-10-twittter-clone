@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     border: none;
+    overflow: hidden;
 }
 body{
     background-color: black;
@@ -103,6 +104,9 @@ header{
     height: 40px;
     border-radius: 50%;
 }
+/* .hidden_on_desktop{
+    display: none;
+} */
 .user-acct-img{
     margin-left: -18px;
 }
@@ -505,6 +509,9 @@ main{
                     margin-left: -1500px;
 
                 }
+                /* .hidden_on_tab{
+                    display: none;
+                } */
 }
 
 /* message disappears */
@@ -570,6 +577,12 @@ main{
     filter: brightness(0) invert();
     
     }
+    /* .hidden_on_tab {
+        display: none;
+    }
+    .hidden_on_desktop {
+        display: none;
+    } */
     .down{
         display: none;
     }
